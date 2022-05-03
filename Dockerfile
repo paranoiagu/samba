@@ -1,5 +1,4 @@
-FROM alpine
-MAINTAINER David Personette <dperson@gmail.com>
+FROM docker.many-it.com:8084/alpine
 
 # Install samba
 RUN apk --no-cache --no-progress upgrade && \

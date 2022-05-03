@@ -1,15 +1,15 @@
-image: dperson/samba:latest
+image: paranoia/samba:latest
 manifests:
-  - image: dperson/samba:amd64
+  - image: paranoia/samba:amd64
     platform:
       architecture: amd64
       os: linux
-  - image: dperson/samba:aarch64
+  - image: paranoia/samba:aarch64
     platform:
       architecture: arm64
       os: linux
       variant: v8
-  - image: dperson/samba:armhf
+  - image: paranoia/samba:armhf
     platform:
       architecture: arm
       os: linux

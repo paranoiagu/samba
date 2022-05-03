@@ -2,9 +2,10 @@ version: '3.4'
 
 services:
   samba:
-    image: dperson/samba
+    image: dockerpush.many-it.com:8086/paranoia/samba
+    build: .
     environment:
-      TZ: 'EST5EDT'
+      TZ: 'Asia/Shanghai'
     networks:
       - default
     ports:
@@ -19,8 +20,8 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - /mnt:/mnt:z
-      - /mnt2:/mnt2:z
+      - /mnt:/mnt
+      - /mnt2:/mnt2
     command: '-s "Mount;/mnt" -s "Bobs Volume;/mnt2;yes;no;no;bob" -u "bob;bobspasswd" -p'
 
 networks:
