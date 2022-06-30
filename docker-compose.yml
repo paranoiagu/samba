@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   samba:
-    image: dockerpush.many-it.com:8086/paranoia/samba
+    image: dockerpush.many-it.com:8086/paranoia/samba:1.0.1
     build: .
     environment:
       TZ: 'Asia/Shanghai'
